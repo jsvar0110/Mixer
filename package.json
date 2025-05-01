@@ -1,0 +1,24 @@
+{
+  "name": "blobmixer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "gsap": "^3.12.7",
+    "lil-gui": "^0.20.0",
+    "tailwindcss": "^4.1.5",
+    "three": "^0.176.0",
+    "three-custom-shader-material": "^6.3.5",
+    "troika-three-text": "^0.52.4",
+    "vite-plugin-glsl": "^1.4.1"
+  }
+}

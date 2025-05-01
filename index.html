@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .underline-animate {
+        position: relative;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+      }
+      .underline-animate::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+      }
+      .underline-animate:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-[#333] min-h-screen w-full">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex flex-row sm:flex-row items-center justify-between gap-4">
+          <!-- Logo -->
+          <h3 class="text-white font-mono text-2xl font-bold">
+            <span class="underline-animate">VARAD</span>
+          </h3>
+          <!-- Nav Links -->
+          <div class="flex flex-row gap-4 sm:gap-6">
+            <a
+              href="https://github.com/jsvar0110?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline-animate text-sm sm:text-base text-white"
+            >
+              Home
+            </a>
+            <!-- Add more links if needed -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full-screen Canvas (make sure the navbar height is considered) -->
+    <div class="pt-20"> <!-- Offset top padding to avoid hiding behind navbar -->
+      <canvas id="canvas" class="w-full h-[calc(100vh-5rem)] block"></canvas>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
