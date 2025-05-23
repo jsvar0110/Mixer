@@ -36,7 +36,7 @@ const blobs = [
         config: { "uPositionFrequency": 1.022, "uPositionStrength": 0.99, "uSmallWavePositionFrequency": 0.378, "uSmallWavePositionStrength": 0.341, "roughness": 0.292, "metalness": 0.73, "envMapIntensity": 0.86, "clearcoat": 1, "clearcoatRoughness": 0, "transmission": 0, "flatShading": false, "wireframe": false, "map": "lucky-day" },
     },
     {
-        name: 'bittle bee',
+        name: 'Bittle bee',
         background: '#4D55CC',
         config: { "uPositionFrequency": 0.0, "uPositionStrength": 0.19, "uSmallWavePositionFrequency": 3.5, "uSmallWavePositionStrength": 0.11, "roughness": 0.2, "metalness": 0.7, "envMapIntensity": 0.8, "clearcoat": 1, "clearcoatRoughness": 0, "transmission": 0, "flatShading": false, "wireframe": false, "map": "pink-floyd" },
     },
